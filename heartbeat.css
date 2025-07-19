@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffebee;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #d32f2f;
+  /* Prevent accidental scrolling */
+  overflow: hidden;
+}
+
+.container {
+  width: 95%;
+  max-width: 600px;
+  padding: 10px;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 5vw, 2rem); /* Scales with screen */
+  margin-bottom: 15px;
+}
+
+canvas {
+  width: 100% !important; /* Responsive width */
+  height: auto !important;
+  max-height: 60vh; /* Prevents canvas from being too tall */
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  touch-action: none; /* Disable browser touch gestures */
+}
+
+p {
+  margin-top: 15px;
+  font-size: clamp(0.9rem, 3vw, 1rem);
+}
